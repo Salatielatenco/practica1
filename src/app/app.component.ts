@@ -2,9 +2,14 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './app.component.html'
+  
 })
 export class AppComponent {
-  title = 'practica1';
+public title :string = 'Contandor con angular';
+public numero:number =0;
+
+public sumarRestar(valor:number){
+  this.numero = this.numero + valor
+}
 }
